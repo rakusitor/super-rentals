@@ -17,14 +17,14 @@ module('Acceptance | super rentals', function (hooks) {
     assert.strictEqual(currentURL(), '/about');
   });
 
-  test("visiting /about", async function (assert) {
-    await visit("/about");
+  test('visiting /about', async function (assert) {
+    await visit('/about');
 
-    assert.strictEqual(currentURL(), "/about");
-    assert.dom("h2").hasText("About Super Rentals");
+    assert.strictEqual(currentURL(), '/about');
+    assert.dom('h2').hasText('About Super Rentals');
 
-    assert.dom(".jumbo a.button").hasText("Contact Us");
-    await click(".jumbo a.button");
+    assert.dom('.jumbo a.button').hasText('Contact Us');
+    await click('.jumbo a.button');
   });
 
   test('visiting /getting-in-touch', async function (assert) {
